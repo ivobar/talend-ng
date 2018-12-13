@@ -4,20 +4,14 @@
       </div>
       <div class="info">
           <div class="title">
-              <h1 class="name">Ivo Baramov</h1>
-              <h2 class="age-job">27, Software Developer</h2>
+              <h1 class="name">{{profile.name}}</h1>
+              <h2 class="age-job">{{profile.age}}, {{profile.job}}</h2>
           </div>
-          <p class="introduction-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              inventore est maiores itaque asperiores distinctio quam similique ratione perspiciatis
-              reprehenderit velit nisi nemo aperiam dolorem repellendus doloribus libero repellat voluptate,
-              rerum cum eius. Aperiam iste tenetur aliquid cupiditate, corrupti vitae quo tempora
-              perspiciatis minima pariatur, cumque culpa nemo odio neque.</p>
-          <p class="introduction-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, earum?
-              Nihil assumenda voluptatum aperiam, error labore dicta explicabo voluptatem distinctio maiores
-              fugit hic doloribus ea? Sunt ab asperiores molestiae voluptatum.</p>
-          <a href="#" class="blog">Read about your mom</a>
+          <p class="introduction-p1">{{profile.mainDescrip}}</p>
+          <p class="introduction-p2">{{profile.secondaryDescrip}}</p>
+          <a href="#" class="blog">{{profile.blogLink}}</a>
       </div>
-      <i class="far fa-window-close"></i>
+      <i class="far fa-window-close" [routerLink]="['/people']"></i>
   </div>
   <div class="roadmap">
       <h3 class="roadmap-header">Personal roadmap</h3>
@@ -35,22 +29,14 @@
                   <i class="fas fa-laptop"></i>
                   <h3>tech</h3>
               </div>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
+              <a *ngFor="let goal of profile.goals" class="goal-link" href="#">{{goal}}</a>
           </div>
           <div class="goal">
               <div class="goal-head">
                   <i class="fas fa-puzzle-piece"></i>
                   <h3>misc</h3>
               </div>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
-              <a class="goal-link" href="#">https://examplelink.com/example_item_193</a>
+              <a *ngFor="let goal of profile.goals" class="goal-link" href="#">{{goal}}</a>
           </div>
           <a href="#">
               <div class="arrow-right"></div>

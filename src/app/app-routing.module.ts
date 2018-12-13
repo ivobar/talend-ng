@@ -9,7 +9,7 @@ import { ContributorsComponent } from './contributors/contributors.component';
 const routes: Routes = [
   {path: '', pathMatch: 'full' , redirectTo: '/people'},
   {path: 'people', component: HomeComponent},
-  {path: 'profile', component: ProfileComponent},
+  {path: 'profile/:id', component: ProfileComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'idea', component: IdeaComponent},
   {path: 'contributors', component: ContributorsComponent}
