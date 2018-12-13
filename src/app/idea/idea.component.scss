@@ -1,0 +1,20 @@
+:host {
+  grid-area: main-left;
+  padding: 0 10rem;
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    line-height: 70px;
+    color: #fff;
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+}

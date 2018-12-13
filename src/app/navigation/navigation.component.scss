@@ -1,0 +1,51 @@
+@import "colors";
+@import "mixins";
+
+:host {
+  grid-area: navigation;
+  justify-self: center;
+  margin-top: 5rem;
+  padding: 0 5rem;
+
+  .page-slider {
+    display: flex;
+    align-items: center;
+
+    .arrow-left {
+      background: url(../../assets/images/icons/angle-pointing-to-left.svg);
+      background-size: contain;
+      background-position: center;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    .arrow-right {
+      background: url(../../assets/images/icons/angle-arrow-pointing-to-right.svg);
+      background-size: contain;
+      background-position: center;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    span {
+      font-size: 3.2rem;
+      margin: 0 4rem;
+      color: $text-white;
+      width: 19.5rem;
+      text-align: center;
+    }
+  }
+
+  .people-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text-grey;
+    margin-top: 1.5rem;
+
+    .name {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+  }
+}

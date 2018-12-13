@@ -1,0 +1,14 @@
+:host {
+    height: 100vh;
+    background: url(../assets/images/bg/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+      ". . logo ."
+      ". main-left navigation ."
+      ". . . .";
+  }

@@ -1,0 +1,13 @@
+@import 'colors';
+
+:host {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 3.2rem;
+    color: $text-white;
+  }
+}

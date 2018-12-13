@@ -1,0 +1,156 @@
+@import 'colors';
+@import 'mixins';
+
+:host {
+    grid-area: main-left;
+    background-color: rgba($color: $bg-grey, $alpha: 0.4);
+    padding: 2rem;
+  
+    .row {
+      display: flex;
+      position: relative;
+  
+      .card {
+        height: 30rem;
+        width: 30rem;
+        margin-right: 0.4rem;
+      }
+  
+      .person-1 {
+        @include setCardBg("../../assets/images/people/pexels-photo-220453.jpeg");
+      }
+  
+      .info {
+        width: 68%;
+        margin-left: 2rem;
+  
+        .title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: baseline;
+          .name {
+            font-size: 3rem;
+            color: $text-white;
+          }
+  
+          .age-job {
+            font-size: 2.5rem;
+            margin-left: 1rem;
+            color: $text-grey;
+          }
+        }
+  
+        .introduction-p1,
+        .introduction-p2 {
+          color: $text-white;
+          font-size: 1.6rem;
+          margin-top: 1.5rem;
+          font-weight: 300;
+        }
+  
+        .blog {
+          text-transform: uppercase;
+          margin-top: 1rem;
+          display: inline-block;
+          font-size: 1.6rem;
+          font-weight: 700;
+  
+          &:link,
+          &:visited {
+            color: $text-white;
+          }
+        }
+      }
+  
+      .fa-window-close {
+        color: $text-white;
+        font-size: 2.5rem;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .roadmap {
+      margin-top: 1rem;
+  
+      .roadmap-header {
+        color: $text-grey;
+        font-size: 2rem;
+      }
+  
+      .roadmap-img {
+        background: url(../../assets/images/roadmap.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 14rem;
+      }
+    }
+  
+    .goals {
+      margin-top: 1rem;
+  
+      .goals-header {
+        color: $text-grey;
+        font-size: 2rem;
+      }
+  
+      .goals-slider {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-around;
+        align-items: center;
+  
+        .arrow-right {
+          background: url(../../assets/images/icons/angle-arrow-pointing-to-right.svg);
+          background-size: contain;
+          background-position: center;
+          height: 4rem;
+          width: 4rem;
+        }
+  
+        .goal-head {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+  
+          i {
+            color: $text-yellow;
+            font-size: 2rem;
+          }
+  
+          h3 {
+            color: $text-white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+          }
+        }
+  
+        .goal-link:visited,
+        .goal-link:link {
+          text-decoration: none;
+          color: $text-white;
+          display: block;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    .footer {
+      margin-top: 5rem;
+      color: $text-white;
+      font-size: 1.4rem;
+  
+      .shipping {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
