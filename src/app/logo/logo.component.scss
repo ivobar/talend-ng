@@ -6,8 +6,11 @@
   justify-content: center;
   align-items: center;
 
-  p {
+  a:visited,
+  a:link {
     font-size: 3.2rem;
     color: $text-white;
+    text-decoration: none;
+    outline: none;
   }
 }

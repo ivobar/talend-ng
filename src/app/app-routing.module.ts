@@ -5,11 +5,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { BlogComponent } from './blog/blog.component';
 import { IdeaComponent } from './idea/idea.component';
 import { ContributorsComponent } from './contributors/contributors.component';
+import { ProfileResolver } from './profile/profile.resolver';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full' , redirectTo: '/people'},
   {path: 'people', component: HomeComponent},
-  {path: 'profile/:id', component: ProfileComponent},
+  {path: 'profile/:id', component: ProfileComponent, resolve: {profile: ProfileResolver}},
   {path: 'blog', component: BlogComponent},
   {path: 'idea', component: IdeaComponent},
   {path: 'contributors', component: ContributorsComponent}

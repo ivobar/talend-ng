@@ -1,9 +1,9 @@
 <div class="page-slider">
-    <a (click)="moveLeft()" [routerLink]="[pageCarousel[0]]">
+    <a (click)="moveLeft()" [routerLink]="[pageCarousel[0]]" class="left-link">
         <div class="arrow-left"></div>
     </a>
     <span>{{pageCarousel[1]}}</span>
-    <a (click)="moveRight()" [routerLink]="[pageCarousel[2]]">
+    <a (click)="moveRight()" [routerLink]="[pageCarousel[2]]" class="right-link">
         <div class="arrow-right"></div>
     </a>
 </div>

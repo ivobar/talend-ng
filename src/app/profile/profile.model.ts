@@ -1,6 +1,6 @@
 export class Profile {
     name: string;
-    age: number;
+    age: string;
     job: string;
     mainDescrip: string;
     secondaryDescrip: string;
@@ -10,7 +10,7 @@ export class Profile {
 
     constructor(
         name: string,
-        age: number,
+        age: string,
         job: string,
         mainDescrip: string,
         secondaryDescrip: string,

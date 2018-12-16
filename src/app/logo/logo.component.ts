@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../navigation/navigation.service';
 
 @Component({
   selector: 'app-logo',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navService: NavigationService) { }
 
   ngOnInit() {
   }
 
+  returnHome() {
+    this.navService.routeChanged.next();
+  }
 }

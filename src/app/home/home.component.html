@@ -1,6 +1,9 @@
-<div class="card person-1" [routerLink]="['/profile/1']"></div>
-<div class="card person-2"></div>
-<div class="card person-3"></div>
-<div class="card person-4"></div>
-<div class="card person-5"></div>
-<div class="card person-6"></div>
+<div *ngIf="loading" class="spinner">
+  <div class="loader"></div>
+</div>
+<div class="card person-1" [routerLink]="['/profile','1']"></div>
+<div class="card person-2" [routerLink]="['/profile','2']"></div>
+<div class="card person-3" [routerLink]="['/profile','3']"></div>
+<div class="card person-4" [routerLink]="['/profile','4']"></div>
+<div class="card person-5" [routerLink]="['/profile','5']"></div>
+<div class="card person-6" [routerLink]="['/profile','6']"></div>

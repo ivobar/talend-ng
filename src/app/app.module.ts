@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { IdeaComponent } from './idea/idea.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { LogoComponent } from './logo/logo.component';
+import { ProfileResolver } from './profile/profile.resolver';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { LogoComponent } from './logo/logo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
