@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Profile } from './profile.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params, Data } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-profile',
@@ -8,14 +9,24 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  profile;
-  cardClass;
+  profile: Profile;
+  cardClass: string;
+  idSub: Subscription;
+  dataSub: Subscription;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.cardClass = `person-${this.route.snapshot.params['id']}`;
-    this.profile = this.route.snapshot.data.profile;
+    this.route.params.subscribe(
+      (params: Params) => {
+        this.cardClass = `person-${params['id']}`;
+      }
+    );
+    this.route.data.subscribe(
+      (data: Data) => {
+        this.profile = data.profile;
+      }
+    );
   }
 
 }

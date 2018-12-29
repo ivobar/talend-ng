@@ -46,7 +46,10 @@
     .name {
       font-size: 2.4rem;
       text-transform: uppercase;
-    }
+      &:hover {
+        cursor: pointer;
+      }
+    } 
   }
 
   .left-link,
@@ -54,3 +57,23 @@
     outline: none;
   }
 }
+
+.selected {
+  background: red;
+}
+
+.selected::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 20px #0ff;
+}
+
+
+
+

@@ -38,6 +38,12 @@ export class NavigationComponent implements OnInit, OnDestroy {
     this.pageCarousel.push(this.pageCarousel.shift());
   }
 
+  selectPerson(id: string) {
+    console.log('maika ti');
+
+    this.navSer.routeChanged.next(id);
+  }
+
   ngOnDestroy() {
     this.routeChangeSub.unsubscribe();
   }
