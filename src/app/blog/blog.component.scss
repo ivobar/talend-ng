@@ -1,0 +1,51 @@
+@import "colors";
+@import "mixins";
+
+:host {
+  grid-area: main-left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  article {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 2spx $bg-grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    &:hover{
+      cursor: pointer;
+    }
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+    .suph{
+      width: 95%;
+      margin: auto;
+    }
+    .title {
+      color: #444444;
+      font-size: 2rem;
+      width: 95%;
+      margin: auto;
+    }
+    .preview{
+      width: 95%;
+      margin: auto;
+    }
+    .footer{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+      }
+      span {
+        color: $text-grey;
+      }
+    }
+  }
+}

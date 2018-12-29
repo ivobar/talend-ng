@@ -8,10 +8,10 @@
     </a>
 </div>
 <div *ngIf="pageCarousel[1]==='people'" class="people-list">
-    <span class="name" [routerLink]="['profile','1']">ivo</span>
-    <span class="name" [routerLink]="['profile','2']">penka</span>
-    <span class="name" [routerLink]="['profile','3']">mara</span>
-    <span class="name" [routerLink]="['profile','4']">john</span>
-    <span class="name" [routerLink]="['profile','5']">mike</span>
-    <span class="name" [routerLink]="['profile','6']">siika</span>
+    <span class="name" (click)="selectPerson(1)" [routerLink]="['profile','1']" routerLinkActive="selected">ivo</span>
+    <span class="name" (click)="selectPerson(2)" [routerLink]="['profile','2']" routerLinkActive="selected">penka</span>
+    <span class="name" (click)="selectPerson(3)" [routerLink]="['profile','3']" routerLinkActive="selected">mara</span>
+    <span class="name" (click)="selectPerson(4)" [routerLink]="['profile','4']" routerLinkActive="selected">john</span>
+    <span class="name" (click)="selectPerson(5)" [routerLink]="['profile','5']" routerLinkActive="selected">mike</span>
+    <span class="name" (click)="selectPerson(6)" [routerLink]="['profile','6']" routerLinkActive="selected">siika</span>
 </div>

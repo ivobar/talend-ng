@@ -39,9 +39,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   }
 
   selectPerson(id: string) {
-    console.log('maika ti');
-
-    this.navSer.routeChanged.next(id);
+    this.navSer.selectPerson.next(id);
   }
 
   ngOnDestroy() {

@@ -6,6 +6,6 @@ import { Subject } from 'rxjs';
 })
 export class NavigationService {
     routeChanged = new Subject();
-
+    selectPerson = new Subject();
     constructor() { }
 }
