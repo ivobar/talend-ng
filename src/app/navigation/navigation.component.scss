@@ -12,7 +12,7 @@
     align-items: center;
 
     .arrow-left {
-      background: url(../../assets/images/icons/angle-pointing-to-left.svg);
+      background: url('/assets/images/icons/angle-pointing-to-left.svg');
       background-size: contain;
       background-position: center;
       height: 4rem;
@@ -20,7 +20,7 @@
     }
 
     .arrow-right {
-      background: url(../../assets/images/icons/angle-arrow-pointing-to-right.svg);
+      background: url('/assets/images/icons/angle-arrow-pointing-to-right.svg');
       background-size: contain;
       background-position: center;
       height: 4rem;

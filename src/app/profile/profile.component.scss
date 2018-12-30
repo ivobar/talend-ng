@@ -17,7 +17,7 @@
       }
   
       .person-1 {
-        @include setCardBg("../../assets/images/people/pexels-photo-220453.jpeg");
+        @include setCardBg("/assets/images/people/pexels-photo-220453.jpeg");
       }
   
       .info {
@@ -84,7 +84,7 @@
       }
   
       .roadmap-img {
-        background: url(../../assets/images/roadmap.svg);
+        background: url('/assets/images/roadmap.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -108,7 +108,7 @@
         align-items: center;
   
         .arrow-right {
-          background: url(../../assets/images/icons/angle-arrow-pointing-to-right.svg);
+          background: url('/assets/images/icons/angle-arrow-pointing-to-right.svg');
           background-size: contain;
           background-position: center;
           height: 4rem;
@@ -155,26 +155,26 @@
     }
 
     .person-1 {
-      @include setCardBg("../../assets/images/people/pexels-photo-220453.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-220453.jpeg");
     }
     
     .person-2 {
-      @include setCardBg("../../assets/images/people/pexels-photo-324658.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-324658.jpeg");
     }
     
     .person-3 {
-      @include setCardBg("../../assets/images/people/pexels-photo-415829.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-415829.jpeg");
     }
     
     .person-4 {
-      @include setCardBg("../../assets/images/people/pexels-photo-937481.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-937481.jpeg");
     }
     
     .person-5 {
-      @include setCardBg("../../assets/images/people/pexels-photo-462680.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-462680.jpeg");
     }
     
     .person-6 {
-      @include setCardBg("../../assets/images/people/pexels-photo-712521.jpeg");
+      @include setCardBg("/assets/images/people/pexels-photo-712521.jpeg");
     }
   }

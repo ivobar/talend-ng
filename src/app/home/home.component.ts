@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     );
     this.selectPersonSub = this.navSer.selectPerson.subscribe(
       (id: string) => {
-        this.selectPerson(id);
+        this.selectPerson(+id);
       }
     );
   }
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  selectPerson(id: string) {
+  selectPerson(id: number) {
     this.spinPerson = `spin-${id}`;
   }
 

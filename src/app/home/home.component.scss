@@ -16,37 +16,37 @@
   }
 
   .person-1 {
-    @include setCardBg("../../assets/images/people/pexels-photo-220453.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-220453.jpeg");
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
 
   .person-2 {
-    @include setCardBg("../../assets/images/people/pexels-photo-324658.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-324658.jpeg");
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
 
   .person-3 {
-    @include setCardBg("../../assets/images/people/pexels-photo-415829.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-415829.jpeg");
     grid-row: 1 / 2;
     grid-column: 3 / 4;
   }
 
   .person-4 {
-    @include setCardBg("../../assets/images/people/pexels-photo-937481.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-937481.jpeg");
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
 
   .person-5 {
-    @include setCardBg("../../assets/images/people/pexels-photo-462680.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-462680.jpeg");
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
 
   .person-6 {
-    @include setCardBg("../../assets/images/people/pexels-photo-712521.jpeg");
+    @include setCardBg("/assets/images/people/pexels-photo-712521.jpeg");
     grid-row: 2 / 3;
     grid-column: 3 / 4;
   }
