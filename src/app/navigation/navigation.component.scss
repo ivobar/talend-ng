@@ -12,7 +12,7 @@
     align-items: center;
 
     .arrow-left {
-      background: url('/assets/images/icons/angle-pointing-to-left.svg');
+      background: url("/assets/images/icons/angle-pointing-to-left.svg");
       background-size: contain;
       background-position: center;
       height: 4rem;
@@ -20,7 +20,7 @@
     }
 
     .arrow-right {
-      background: url('/assets/images/icons/angle-arrow-pointing-to-right.svg');
+      background: url("/assets/images/icons/angle-arrow-pointing-to-right.svg");
       background-size: contain;
       background-position: center;
       height: 4rem;
@@ -28,6 +28,7 @@
     }
 
     span {
+      display: block;
       font-size: 3.2rem;
       margin: 0 4rem;
       color: $text-white;
@@ -53,7 +54,7 @@
       &:hover {
         cursor: pointer;
       }
-    } 
+    }
   }
 
   .left-link,
@@ -63,18 +64,46 @@
 }
 
 .selected::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 1px;
   width: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 40px 10px rgba(255,255,255,0.3);
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.3);
 }
 
+@media only screen and (max-width: 1600px) {
+  :host {
+    .page-slider {
+      span {
+        margin: 0;
+      }
+    }
+  }
+}
 
+@media only screen and (max-width: 1200px) {
+  :host {
+    justify-self: start;
+    align-self: center;
+    margin-top: 0;
+    padding: 0;
+    .people-list {
+      display: none;
+    }
+  }
+}
 
-
+@media only screen and (max-width: 800px) {
+  :host {
+    .page-slider {
+      span {
+        margin: 0;
+      }
+    }
+  }
+}

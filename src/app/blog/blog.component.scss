@@ -16,10 +16,10 @@
     justify-content: space-between;
     font-size: 1.3rem;
     padding-bottom: 1rem;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
-    .suph{
+    .suph {
       width: 95%;
       margin: auto;
     }
@@ -29,11 +29,11 @@
       width: 95%;
       margin: auto;
     }
-    .preview{
+    .preview {
       width: 95%;
       margin: auto;
     }
-    .footer{
+    .footer {
       width: 95%;
       margin: auto;
       display: flex;
@@ -49,58 +49,94 @@
       }
     }
   }
-  .img-1{
+  .img-1 {
     width: 100%;
-    height: 200px;
-    background: url('/assets/images/blog/annie-spratt-51434-unsplash.jpg');
+    max-height: 200px;
+    background: url("/assets/images/blog/annie-spratt-51434-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
   }
-  .img-2{
+  .img-2 {
     width: 100%;
     height: 200px;
-    background: url('/assets/images/blog/jay-ruzesky-84387-unsplash.jpg');
+    background: url("/assets/images/blog/jay-ruzesky-84387-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
   }
-  .img-3{
+  .img-3 {
     width: 100%;
     height: 200px;
-    background: url('/assets/images/blog/lukas-budimaier-83358-unsplash.jpg');
+    background: url("/assets/images/blog/lukas-budimaier-83358-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
   }
-  .img-4{
+  .img-4 {
     width: 100%;
     height: 200px;
-    background: url('/assets/images/blog/matthew-henry-58760-unsplash.jpg');
+    background: url("/assets/images/blog/matthew-henry-58760-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
   }
-  .img-5{
+  .img-5 {
     width: 100%;
     height: 200px;
-    background: url('/assets/images/blog/roberto-nickson-48063-unsplash.jpg');
+    background: url("/assets/images/blog/roberto-nickson-48063-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
   }
-  .img-6{
+  .img-6 {
     width: 100%;
     height: 200px;
-    background: url('/assets/images/blog/steve-carter-68574-unsplash.jpg');
+    background: url("/assets/images/blog/steve-carter-68574-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px 5px 0 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :host {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6 {
+      height: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :host {
+    article {
+      .footer {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6 {
+      height: 100px;
+    }
   }
 }

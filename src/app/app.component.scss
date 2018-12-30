@@ -12,3 +12,13 @@
       ". main-left navigation ."
       ". . . .";
   }
+
+  @media only screen and (max-width: 1200px) {
+    :host {
+        grid-template-columns: 1fr 8fr 2fr 1fr;
+        grid-template-areas:
+        ". navigation logo ."
+        ". main-left main-left ."
+        ". . . .";
+    }
+  }
