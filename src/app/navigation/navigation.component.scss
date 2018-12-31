@@ -63,6 +63,18 @@
   }
 }
 
+a:link,
+a:visited,
+a:focus {
+  outline: none;
+}
+
+div:link,
+div:visited,
+div:focus {
+  outline: none;
+}
+
 .selected::before {
   content: "";
   position: absolute;
