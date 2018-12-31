@@ -1,3 +1,14 @@
 :host {
     grid-area: main-left;
+    align-content: center;
+    justify-content: start;
+    color: #fff;
+    .contributors{
+        margin-top: 10rem;
+    }
+    p {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: .5rem;
+    }
 }
