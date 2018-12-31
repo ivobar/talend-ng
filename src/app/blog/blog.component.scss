@@ -16,6 +16,7 @@
     justify-content: space-between;
     font-size: 1.3rem;
     padding-bottom: 1rem;
+    max-height: calc((100vh - 120px - 1rem)/2);
     &:hover {
       cursor: pointer;
     }
@@ -50,7 +51,7 @@
     }
   }
   .img-1 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/annie-spratt-51434-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -58,7 +59,7 @@
     border-radius: 5px 5px 0 0;
   }
   .img-2 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/jay-ruzesky-84387-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -66,7 +67,7 @@
     border-radius: 5px 5px 0 0;
   }
   .img-3 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/lukas-budimaier-83358-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -74,7 +75,7 @@
     border-radius: 5px 5px 0 0;
   }
   .img-4 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/matthew-henry-58760-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -82,7 +83,7 @@
     border-radius: 5px 5px 0 0;
   }
   .img-5 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/roberto-nickson-48063-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -90,7 +91,7 @@
     border-radius: 5px 5px 0 0;
   }
   .img-6 {
-    height: 150px;
+    height: 45%;
     background: url("/assets/images/blog/steve-carter-68574-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -104,15 +105,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     article {
-      max-height: 250px;
-    }
-    .img-1,
-    .img-2,
-    .img-3,
-    .img-4,
-    .img-5,
-    .img-6 {
-      height: 150px;
+      max-height: calc((100vh - 120px - 2rem)/3);
     }
   }
 }
@@ -126,14 +119,6 @@
           height: 20px;
         }
       }
-    }
-    .img-1,
-    .img-2,
-    .img-3,
-    .img-4,
-    .img-5,
-    .img-6 {
-      height: 100px;
     }
   }
 }
