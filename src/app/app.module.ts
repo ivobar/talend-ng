@@ -12,6 +12,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { LogoComponent } from './logo/logo.component';
 import { ProfileResolver } from './profile/profile.resolver';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProfileResolver } from './profile/profile.resolver';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [ProfileResolver],
   bootstrap: [AppComponent]
